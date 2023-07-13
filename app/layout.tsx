@@ -4,8 +4,10 @@ import { Poppins } from "next/font/google";
 import ClientOnly from "./components/ClientOnly";
 import Navbar from "./components/navbar/Navbar";
 import SocialLinks from "./components/SocialLinks";
+import Modal from "./components/modals/Modal";
+import ProjectModal from "./components/modals/ProjectModal";
 
-const font = Poppins({ subsets: ["latin"], weight: "400" });
+const font = Poppins({ subsets: ["latin"], weight: "600" });
 
 export const metadata: Metadata = {
   title: "Mitchel's Portfolio",
@@ -21,10 +23,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
         <ClientOnly>
+          <ProjectModal />
           <Navbar />
           <SocialLinks />
         </ClientOnly>
-        <div className="bg-gradient-to-b from-black via-black to-gray-800">
+        <div className="bg-gradient-to-b from-black via-black to-gray-800 border-0">
           {children}
         </div>
       </body>

@@ -4,16 +4,16 @@ import { useRouter } from "next/navigation";
 import Button from "./components/Button";
 import ClientOnly from "./components/ClientOnly";
 import Image from "next/image";
-import { MdKeyboardArrowRight } from "react-icons/md";
+import { MdOutlineNavigateNext } from "react-icons/md";
 
 export default function Home() {
   const router = useRouter();
   return (
     <ClientOnly>
-      <div className="text-blue-400 h-screen max-w-[2520px] mx-auto p-20">
-        <div className="max-w-screen-lg flex flex-col md:flex-row items-center justify-center px-4 mx-auto mt-20">
+      <div className="text-blue-400 h-full max-w-[2520px] mx-auto py-8 md:py-24 md:h-screen justify-center">
+        <div className="max-w-screen-lg flex flex-col md:flex-row items-center justify-center mx-auto mt-16 2xl:mt28 px-10">
           <div className="flex flex-col justify-center h-full">
-            <h2 className="text-4xl md:text-7xl font-extrabold text-white">
+            <h2 className="text-6xl md:text-7xl font-extrabold text-white">
               Software Engineer
             </h2>
             <p className="text-blue-300 py-6 max-w-md">
@@ -21,22 +21,24 @@ export default function Home() {
               Computer Science and Finance at the University of Waterloo. In my
               free time, I enjoy being active by going to the gym and playing football.
             </p>
-            <p className="text-blue-500 py- max-w-md">
+            <p className="text-blue-500 max-w-md">
               Most opportunities are created by luck. It takes skill to grasp
               those opportunities and turn it into success. - Technoblade
             </p>
             <div className="pt-4">
               <Button
-                label="Projects"
-                onClick={() => router.push("/projects")}
-                icon={MdKeyboardArrowRight}
+                label="About Me"
+                onClick={() => router.push("/about")}
+                icon={MdOutlineNavigateNext}
+                className="group-hover:translate-x-3 duration-300"
+                size={30}
               />
             </div>
           </div>
-          <div className="md:block hidden">
+          <div className="w-full md:w-2/3 pt-10 md:pt-0">
             <Image
               alt="My profile"
-              className="rounded-2xl mx-auto md:w-full w-2/3"
+              className="rounded-2xl mx-auto"
               src="/images/profile.jpg"
               width={400}
               height={400}
