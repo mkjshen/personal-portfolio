@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import ClientOnly from "./components/ClientOnly";
 import Navbar from "./components/navbar/Navbar";
+import SocialLinks from "./components/SocialLinks";
 
 const font = Poppins({ subsets: ["latin"], weight: "400" });
 
@@ -21,8 +22,11 @@ export default function RootLayout({
       <body className={font.className}>
         <ClientOnly>
           <Navbar />
+          <SocialLinks />
         </ClientOnly>
-        <div className="pb-20 pt-28">{children}</div>
+        <div className="bg-gradient-to-b from-black via-black to-gray-800">
+          {children}
+        </div>
       </body>
     </html>
   );

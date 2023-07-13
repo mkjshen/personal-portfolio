@@ -5,35 +5,16 @@ import { IconType } from "react-icons";
 interface ButtonProps {
   label: string;
   onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
-  disabled?: boolean;
-  outline?: boolean;
-  small?: boolean;
   icon?: IconType;
 }
 
-const Button: React.FC<ButtonProps> = ({
-  label,
-  onClick,
-  disabled,
-  outline,
-  small,
-  icon: Icon,
-}) => {
+const Button: React.FC<ButtonProps> = ({ label, onClick, icon: Icon }) => {
   return (
     <button
       onClick={onClick}
-      disabled={disabled}
-      className={`relative disabled:opacity-70 disabled:cursor-not-allowed rounded-lg hover:opacity-80 transition w-full ${
-        outline ? "bg-white" : "bg-rose-500"
-      }
-      ${outline ? "border-black" : "border-rose-500"}
-      ${outline ? "text-black" : "text-white"}
-      ${small ? "py-1" : "py-3"}
-      ${small ? "text-sm" : "text-md"}
-      ${small ? "font-light" : "font-semibold"}
-      ${small ? "border-[1px]" : "border-2"}`}>
-      {Icon && <Icon size={24} className="absolute top-3 left-4" />}
+      className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer duration-200 hover:scale-105">
       {label}
+      {Icon && <Icon size={25} className="group-hover:rotate-90 duration-300" />}
     </button>
   );
 };
