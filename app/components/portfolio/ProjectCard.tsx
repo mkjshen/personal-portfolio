@@ -24,10 +24,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
   return (
     <div className="shadow-md shadow-gray-600 rounded-lg pb-4">
-      <img
+      <Image
         className="rounded-md hover:scale-110 duration-200"
         src={src}
         alt={label}
+        height={800}
+        width={800}
       />
       <div className="flex flex-col items-center justify-center">
         <span className="pb-2 pt-4 cursor-default font-bold text-gray-400">{label}</span>
