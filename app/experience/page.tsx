@@ -12,61 +12,61 @@ const ExperiencePage = () => {
   const technologies = [
     {
       id: 1,
-      src: "images/experience/html.png",
+      src: "/images/experience/html.png",
       title: "HTML",
       style: "shadow-orange-500",
     },
     {
       id: 2,
-      src: "images/experience/css.png",
+      src: "/images/experience/css.png",
       title: "CSS",
       style: "shadow-blue-500",
     },
     {
       id: 3,
-      src: "images/experience/javascript.png",
+      src: "/images/experience/javascript.png",
       title: "Javascript",
       style: "shadow-yellow-500",
     },
     {
       id: 4,
-      src: "images/experience/react.png",
+      src: "/images/experience/react.png",
       title: "React.js",
       style: "shadow-blue-600",
     },
     {
       id: 5,
-      src: "images/experience/tailwind.png",
+      src: "/images/experience/tailwind.png",
       title: "Tailwind",
       style: "shadow-sky-400",
     },
     {
       id: 6,
-      src: "images/experience/nextjs.png",
+      src: "/images/experience/nextjs.png",
       title: "Next.js",
       style: "shadow-white",
     },
     {
       id: 7,
-      src: "images/experience/github.png",
+      src: "/images/experience/github.png",
       title: "Github",
       style: "shadow-gray-500",
     },
     {
       id: 8,
-      src: "images/experience/node.png",
+      src: "/images/experience/node.png",
       title: "Node.js",
       style: "shadow-green-500",
     },
     {
       id: 9,
-      src: "images/experience/mongodb.svg",
+      src: "/images/experience/mongodb.svg",
       title: "MongoDB",
       style: "shadow-green-400",
     },
     {
       id: 10,
-      src: "images/experience/python.svg",
+      src: "/images/experience/python.svg",
       title: "Python",
       style: "shadow-yellow-400",
     },
@@ -78,19 +78,19 @@ const ExperiencePage = () => {
     },
     {
       id: 12,
-      src: "images/experience/typescript.svg",
+      src: "/images/experience/typescript.svg",
       title: "TypeScript",
       style: "shadow-blue-600",
     },
     {
       id: 13,
-      src: "images/experience/vscode.svg",
+      src: "/images/experience/vscode.svg",
       title: "Visual Studio Code",
       style: "shadow-sky-400",
     },
     {
       id: 14,
-      src: "images/experience/c.svg",
+      src: "/images/experience/c.svg",
       title: "C",
       style: "shadow-blue-400",
     },
@@ -103,7 +103,7 @@ const ExperiencePage = () => {
           <h2 className="text-5xl md:text-7xl text-white">Experience</h2>
           <div className="flex justify-between items-center">
             <p className="py-8 text-xl">
-              These are some of the various technologies I've worked with!
+              These are some of the various technologies I have worked with!
             </p>
             <div className="hidden md:block">
               <Button

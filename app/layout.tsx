@@ -4,7 +4,6 @@ import { Poppins } from "next/font/google";
 import ClientOnly from "./components/ClientOnly";
 import Navbar from "./components/navbar/Navbar";
 import SocialLinks from "./components/SocialLinks";
-import Modal from "./components/modals/Modal";
 import ProjectModal from "./components/modals/ProjectModal";
 
 const font = Poppins({ subsets: ["latin"], weight: "600" });

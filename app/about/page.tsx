@@ -19,14 +19,14 @@ const AboutPage = () => {
             <p className="py-4 text-blue-300">
               Hi guys, thanks for visiting my website! My name is Mitchel Shen
               and I am a 20 year old student at the University of Waterloo. I
-              was born in Singapore but I've lived in various countries, such as
+              was born in Singapore but I have lived in various countries, such as
               China and the UK, throughout my life.
             </p>
             <br />
 
             <p className="py-4">
               One of my favourite pastimes is to watch and play football with my
-              friends. Ever since I was young, I've supported Manchester United
+              friends. Ever since I was young, I currently support Manchester United
               and I will continue supporting them until the day I die.
             </p>
             <div className="pt-4">
