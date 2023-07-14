@@ -33,11 +33,6 @@ const Menu = () => {
         label="Experience"
         icon={BsCodeSlash}
       />
-      <MenuItem
-        onClick={() => router.push("/contact")}
-        label="Contact Me!"
-        icon={BiSolidContact}
-      />
     </div>
   );
 };

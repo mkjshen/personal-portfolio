@@ -13,9 +13,9 @@ const AboutPage = () => {
       <div className="text-blue-400 h-full max-w-[2520px] mx-auto py-8 md:py-24 md:h-screen lg:py-28">
         <div className="max-w-screen-lg flex flex-col md:flex-row items-center justify-center mx-auto mt-16 lg:mt-20 xl:mt-24 2xl:mt-28 px-10">
           <div className="flex flex-col my-auto md:w-1/2 w-full text-blue-400 md:mx-6">
-            <h1 className="font-black text-5xl md:text-7xl pb-4 text-white">
+            <h2 className="font-black text-5xl md:text-7xl pb-4 text-white">
               About
-            </h1>
+            </h2>
             <p className="py-4 text-blue-300">
               Hi guys, thanks for visiting my website! My name is Mitchel Shen
               and I am a 20 year old student at the University of Waterloo. I
