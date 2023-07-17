@@ -14,7 +14,7 @@ export default function Home() {
         <div className="max-w-screen-lg flex flex-col md:flex-row items-center justify-center mx-auto mt-16 2xl:mt28 px-10">
           <div className="flex flex-col justify-center h-full">
             <h2 className="text-6xl md:text-7xl font-extrabold text-white">
-              Software Engineer
+              Software Developer
             </h2>
             <p className="text-blue-300 py-6 max-w-md">
               Hi, my name is Mitchel and I am currently double majoring in

@@ -9,7 +9,7 @@ import { AiOutlineHome } from "react-icons/ai";
 const ExperiencePage = () => {
   const router = useRouter();
 
-  const technologies = [
+  const languages = [
     {
       id: 1,
       src: "/images/experience/html.png",
@@ -30,71 +30,79 @@ const ExperiencePage = () => {
     },
     {
       id: 4,
-      src: "/images/experience/react.png",
-      title: "React.js",
-      style: "shadow-blue-600",
-    },
-    {
-      id: 5,
-      src: "/images/experience/tailwind.png",
-      title: "Tailwind",
-      style: "shadow-sky-400",
-    },
-    {
-      id: 6,
-      src: "/images/experience/nextjs.png",
-      title: "Next.js",
-      style: "shadow-white",
-    },
-    {
-      id: 7,
-      src: "/images/experience/github.png",
-      title: "Github",
-      style: "shadow-gray-500",
-    },
-    {
-      id: 8,
-      src: "/images/experience/node.png",
-      title: "Node.js",
-      style: "shadow-green-500",
-    },
-    {
-      id: 9,
-      src: "/images/experience/mongodb.svg",
-      title: "MongoDB",
-      style: "shadow-green-400",
-    },
-    {
-      id: 10,
       src: "/images/experience/python.svg",
       title: "Python",
       style: "shadow-yellow-400",
     },
+    
     {
-      id: 11,
-      src: "images/experience/bash.svg",
-      title: "Bash",
-      style: "shadow-gray-400",
-    },
-    {
-      id: 12,
+      id: 5,
       src: "/images/experience/typescript.svg",
-      title: "TypeScript",
+      title: "Typescript",
       style: "shadow-blue-600",
     },
+    
     {
-      id: 13,
-      src: "/images/experience/vscode.svg",
-      title: "Visual Studio Code",
-      style: "shadow-sky-400",
-    },
-    {
-      id: 14,
+      id: 6,
       src: "/images/experience/c.svg",
       title: "C",
       style: "shadow-blue-400",
     },
   ];
+
+  const frameworks = [
+    {
+      id: 1,
+      src: "/images/experience/react.png",
+      title: "React.js",
+      style: "shadow-blue-600",
+    },
+    {
+      id: 2,
+      src: "/images/experience/tailwind.png",
+      title: "Tailwind",
+      style: "shadow-sky-400",
+    },
+    {
+      id: 3,
+      src: "/images/experience/nextjs.png",
+      title: "Next.js",
+      style: "shadow-white",
+    },
+    {
+      id: 4,
+      src: "/images/experience/node.png",
+      title: "Node.js",
+      style: "shadow-green-500",
+    },
+    {
+      id: 5,
+      src: "/images/experience/mongodb.svg",
+      title: "MongoDB",
+      style: "shadow-green-400",
+    },
+  ]
+
+  const others = [
+    {
+      id: 1,
+      src: "/images/experience/vscode.svg",
+      title: "Visual Studio Code",
+      style: "shadow-sky-400",
+    },
+    {
+      id: 2,
+      src: "images/experience/bash.svg",
+      title: "Bash",
+      style: "shadow-gray-400",
+    },
+    {
+      id: 3,
+      src: "/images/experience/github.png",
+      title: "Github",
+      style: "shadow-gray-500",
+    },
+  ]
 
   return (
     <ClientOnly>
@@ -103,7 +111,7 @@ const ExperiencePage = () => {
           <h2 className="text-5xl md:text-7xl text-white">Experience</h2>
           <div className="flex justify-between items-center">
             <p className="py-8 text-xl">
-              These are some of the various technologies I have worked with!
+              These are some of the various languages and frameworks that I have worked with!
             </p>
             <div className="hidden md:block">
               <Button
@@ -115,8 +123,27 @@ const ExperiencePage = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-12 md:px-12 text-center">
-          {technologies.map(({ id, src, title, style }) => (
+        <p className="text-3xl md:text-5xl pb-10 px-10 text-blue-500">
+          Languages
+        </p>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 px-12 md:px-12 text-center">
+          {languages.map(({ id, src, title, style }) => (
+            <TechnologyCard key={id} src={src} label={title} style={style} />
+          ))}
+        </div>
+        <p className="text-3xl md:text-5xl py-10 px-10 text-green-500">
+          Frameworks
+        </p>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 px-12 md:px-12 text-center">
+          {frameworks.map(({ id, src, title, style }) => (
+            <TechnologyCard key={id} src={src} label={title} style={style} />
+          ))}
+        </div>
+        <p className="text-3xl md:text-5xl py-10 px-10 text-red-500">
+          Miscellaneous
+        </p>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 px-12 md:px-12 text-center">
+          {others.map(({ id, src, title, style }) => (
             <TechnologyCard key={id} src={src} label={title} style={style} />
           ))}
         </div>
